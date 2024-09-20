@@ -1,0 +1,26 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/admin-main.css}" rel="stylesheet" type="text/css">
+    <title>Admin panel</title>
+</head>
+<body>
+    <div class="left_panel" th:insert="blocks/left_panel"></div>
+    <div class="content">
+        <div class="content-header">
+            <h2 id="api-url" th:text="${apiUrl}">
+        </div>
+        <div class="content-form">
+            <div class="view-model">
+
+            </div>
+            <div class="create-model">
+
+            </div>
+        </div>  
+    </div>
+</body>
+<div id="js_path" th:text="${js}" style="display: none;"></div>
+<script type="module" th:src="@{/js/main.js}"></script>
+</html>

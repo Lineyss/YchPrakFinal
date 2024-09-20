@@ -1,0 +1,19 @@
+spring:
+  config:
+    name: Crystal
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Crystal
+    username: postgres
+    password: 123321
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8000
